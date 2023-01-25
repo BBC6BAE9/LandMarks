@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "企业微信截图_68b6a80d-6d07-4d95-b5fe-9b9e51ba8ea7.png",
+      "idiom" : "universal",
+      "platform" : "watchos",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
