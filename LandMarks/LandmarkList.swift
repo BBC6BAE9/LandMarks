@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkList.swift
 //  LandMarks
 //
 //  Created by huang on 2023/1/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkList: View {
     var body: some View {
         NavigationView {
             List(landmarks) { landmark in
@@ -22,8 +22,12 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
+            LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }
